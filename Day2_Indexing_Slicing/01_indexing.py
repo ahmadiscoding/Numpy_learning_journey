@@ -36,6 +36,10 @@ print(view_slic)
 #all we have to do here is to store our slicing in a variable.
 
 
+copy_arr= arrays.copy()
+copy_arr[4]=100 #will replace 3 into 100
+print(copy_arr)
+
 
 # -------------
 # Broadcasting
@@ -44,3 +48,42 @@ print(view_slic)
 arrays=np.array([1,2,4,6,9,1,0,1])
 arrays[2:5]=99 #change 4,6,9 to 99
 print(arrays)
+
+
+# ----------------
+# boolean indexing
+# ----------------
+
+arr=np.array([2,3,5,7,9,11])
+mask=arr>7
+print(arr[mask])
+
+
+# ----------------
+# fancy indexing
+# ----------------
+
+arr = np.array([
+    [10,20],
+    [30,40],
+    [50,60],
+    [70,80],
+    [90,100],
+    [200,0],
+    [4.0,10]
+])
+
+result=arr[[5,6]]
+print(result)
+
+# -------------------
+# & and | combination
+# -------------------
+
+arr= np.array([0,1,2,4,4,5,6,7,8,9])
+
+a=arr[(arr>2)& (arr<8)]
+print(a)
+
+a= arr[(arr%2==0) & (arr<7)]
+print(a)
