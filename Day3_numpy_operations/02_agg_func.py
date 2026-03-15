@@ -30,6 +30,15 @@ print(f"column wise mean: {np.mean(arr_1, axis=0)}")
 print(f"row wise mean: {np.mean(arr_1, axis=1)}")
 
 
+##.median()-->the middle value of the sorted data
+L1=np.array([10,20,30,40,50])
+print(f"Median: {np.median(L1)}")
+
+##.percentile()-->Shows what value lies below X% of data.
+Student=np.array([40, 50, 60, 70, 80])
+print(f"Percentile: {np.percentile(Student,80)}")
+
+
 
 #-----------
 # np.where()
@@ -75,4 +84,3 @@ arr= np.array([50.2, 0.85, 66.7, 70.9, 99.1])
 print(f'{np.round(arr)}\n')
 print(f'{np.ceil(arr)}\n')
 print(f'{np.floor(arr)}\n')
-
