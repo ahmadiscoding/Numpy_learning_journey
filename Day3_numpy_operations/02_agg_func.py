@@ -25,6 +25,11 @@ print(np.var(arr))
 print(np.sum(arr, axis=0)) ## for column
 print(np.sum(arr, axis=1)) ## for rows
 
+arr_1=np.array([[10,20,30,40],[50,60,70,80]])
+print(f"column wise mean: {np.mean(arr_1, axis=0)}")
+print(f"row wise mean: {np.mean(arr_1, axis=1)}")
+
+
 
 #-----------
 # np.where()
