@@ -1,5 +1,5 @@
 import numpy as np
-inp= np.array(list(map(int, input("Enter you marks WITH SP:").split())))
+inp= np.array(list(map(int, input("Enter you marks WITH SPACE:").split())))
 print(inp)
 print(np.percentile(inp, 50))
 
