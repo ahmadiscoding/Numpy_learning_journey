@@ -16,10 +16,10 @@ print("Standard Normal:", np.random.randn(3))
 # ===============================
 
 print("\n=== Seed Example ===")
-np.random.seed(12)
+# np.random.seed(12)
 print("Seed 12:", np.random.rand(3))
 
-np.random.seed(42)
+# np.random.seed(42)
 print("Seed 42:", np.random.rand(3))
 
 
@@ -59,7 +59,7 @@ print("Array of integers:", np.random.randint(0, 10, size=3))
 # ===============================
 
 print("\n=== Seed Sequence Behavior ===")
-np.random.seed(42)
+# np.random.seed(42)
 print("First call:", np.random.randint(1, 10, size=5))
 print("Second call (same seed, next sequence):", np.random.randint(1, 10, size=5))
 
@@ -79,3 +79,26 @@ print("Mean=50, Std=2:", np.random.normal(50, 2, size=10))
 
 # Larger spread
 print("Mean=50, Std=20:", np.random.normal(50, 20, size=10))
+
+
+
+# =================
+# Random Choice 
+# =================
+#np.random.choice(array,size)
+
+arr=[1,2,3,4,5,6]
+print(np.random.choice(arr,2))
+
+
+
+# ======================
+# Binomial Distribution
+# ======================
+#n= number of trials
+#p= probabilty (which's can't be greater than 1)
+#size= size of an array
+print(np.random.binomial(n=10, p=0.5, size=5))
+
+
+
